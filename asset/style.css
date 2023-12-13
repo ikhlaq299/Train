@@ -1,0 +1,63 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+canvas {
+  border: 1px solid black;
+}
+canvas#trainCanvas {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.speed-buttons {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 91px; */
+  align-items: center;
+  /* padding: 0px 65px; */
+  width: 95%;
+  margin: 0 auto;
+}
+.speed-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.speed-button:hover {
+  background-color: #45a049;
+}
+
+.speed-button.decrease {
+  background-color: #f44336;
+}
+
+.speed-button.decrease:hover {
+  background-color: #d32f2f;
+}
+.speed-display {
+  font-size: 24px;
+}
+@media screen and (max-width: 600px) {
+  .speed-display {
+    font-size: 15px;
+    width: 70%;
+    text-align: center;
+  }
+  .speed-button {
+    padding: 5px 10px;
+
+    font-size: 12px;
+  }
+  .speed-buttons {
+    width: 100%;
+  }
+}

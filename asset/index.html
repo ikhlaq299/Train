@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train Animation</title>
+    <link rel="stylesheet" href="./style.css" />
+    
+  </head>
+  <body>
+    <canvas id="trainCanvas" width="1000" height="400"></canvas>
+    <div class="speed-buttons">
+      <button class="speed-button decrease" id="dec" onclick="dec()">
+        Decrease Speed
+      </button>
+      <div class="speed-display">
+        Current Speed: <span id="current-speed">2</span>
+      </div>
+      <button class="speed-button increase" id="inc" onclick="inc()">
+        Increase Speed
+      </button>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
