@@ -3,7 +3,7 @@ const canvas = document.getElementById("trainCanvas");
 const ctx = canvas.getContext("2d");
 console.log(ctx);
 const trainImage = new Image();
-trainImage.src = "../images2/pngwing.com (3).png";
+trainImage.src = "./images2/pngwing.com (3).png";
 // Provide the correct path to your train imageS
 let trainX = 50;
 let speed = 2;
@@ -13,9 +13,9 @@ const backgrounds = [
   // "../images/my5v_5w0i_210504.jpg",
   // "../images/omyg_e5a8_210318.jpg",
   // "../images/vn6j_t2go_210318.jpg",
-  "../images2/31084.jpg",
-  "../images2/31806.jpg",
-  "../images2/wjqy_i2bo_190607.jpg",
+  "./images2/31084.jpg",
+  "./images2/31806.jpg",
+  "./images2/wjqy_i2bo_190607.jpg",
 ];
 
 function draw() {
